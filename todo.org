@@ -1,6 +1,6 @@
 * TODO docs
   DEADLINE: <2026-09-29 Tue>
-  - [ ] 8. Commmon Collection
+  - [X] 8. Commmon Collection
   - [ ] 9. Error Handling
   - [ ] 10. Generic Types, Traits and lifetime
   - [ ] 15. Smart Pointers
