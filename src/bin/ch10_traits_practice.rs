@@ -4,7 +4,6 @@ use std::fmt::format;
 trait RenderHtml {
     fn render_body(&self) -> String;
 
-    // Default implementation
     fn render_card(&self) -> String {
         format!("<div class=\"card\"> {} </div>", self.render_body())
     }
@@ -47,7 +46,7 @@ struct Pinned<T> {
 
 impl<T: RenderHtml> RenderHtml for Pinned<T> {
     fn render_body(&self) -> String {
-        format!("[PINNED: {}] {} ", self.reason, self.render_body())
+        format!("[PINNED: {}] {} ", self.reason, self.item.render_body())
     }
 }
 
