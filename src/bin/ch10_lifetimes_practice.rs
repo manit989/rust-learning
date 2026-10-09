@@ -25,7 +25,11 @@ impl<'a> PostSlice<'a> {
 
     // Explicit lifetime: return value can come from either self or default_content
     fn content_or_default(&self, default_content: &'a str) -> &'a str {
-        todo!()
+        if self.content.trim().is_empty() {
+            default_content
+        } else {
+            self.content
+        }
     }
 }
 
@@ -35,7 +39,12 @@ where
     T: Display,
 {
     // Label print karo aur longer string return karo
-    todo!()
+    println!("Comparing [{}]:",label);
+    if first.len() > second.len() {
+        first
+    } else {
+        second
+    }
 }
 
 fn main() {
