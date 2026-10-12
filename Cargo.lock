@@ -44,6 +44,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "proconio"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4a5e55af233c003f8ae4b79a006192e516243c965438dbc318e7459b910b0220"
+
+[[package]]
 name = "quote"
 version = "1.0.47"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -86,6 +92,7 @@ dependencies = [
 name = "rust_learn"
 version = "0.1.0"
 dependencies = [
+ "proconio",
  "rand",
 ]
 
